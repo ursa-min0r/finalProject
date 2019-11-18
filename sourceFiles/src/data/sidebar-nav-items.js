@@ -1,19 +1,20 @@
 export default function() {
   return [
     {
-      title: "Blog Dashboard",
+      title: "Dashboard",
       to: "/blog-overview",
-      htmlBefore: '<i class="material-icons">edit</i>',
+      htmlBefore: '<i class="material-icons">apps</i>',
       htmlAfter: ""
     },
+
     {
-      title: "Blog Posts",
-      htmlBefore: '<i class="material-icons">vertical_split</i>',
+      title: "Meetups",
+      htmlBefore: '<i class="material-icons">group</i>',
       to: "/blog-posts",
     },
     {
-      title: "Add New Post",
-      htmlBefore: '<i class="material-icons">note_add</i>',
+      title: "New Post",
+      htmlBefore: '<i class="material-icons">edit</i>',
       to: "/add-new-post",
     },
     {
@@ -27,7 +28,7 @@ export default function() {
       to: "/tables",
     },
     {
-      title: "User Profile",
+      title: "Profile",
       htmlBefore: '<i class="material-icons">person</i>',
       to: "/user-profile-lite",
     },

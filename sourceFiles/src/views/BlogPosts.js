@@ -20,6 +20,7 @@ class BlogPosts extends React.Component {
 
     this.state = {
       // First list of posts.
+
       PostsListOne: [
         {
           backgroundImage: require("../images/content-management/1.jpeg"),
@@ -68,6 +69,7 @@ class BlogPosts extends React.Component {
       ],
 
       // Second list of posts.
+
       PostsListTwo: [
         {
           backgroundImage: require("../images/content-management/5.jpeg"),
@@ -121,10 +123,59 @@ class BlogPosts extends React.Component {
           body:
             "West room at sent if year. Numerous indulged distance old law you. Total state as merit court green decay he. Steepest merit checking railway...",
           date: "29 February 2019"
-        }
+        },
+        {
+          author: "John James",
+          authorAvatar: require("../images/avatars/2.jpg"),
+          title: "Husbands ask repeated resolved but laughter debating",
+          body:
+            "It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears...",
+          date: "29 February 2019"
+        },
+        {
+          author: "John James",
+          authorAvatar: require("../images/avatars/2.jpg"),
+          title: "Husbands ask repeated resolved but laughter debating",
+          body:
+            "It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears...",
+          date: "29 February 2019"
+        },
+        {
+          author: "John James",
+          authorAvatar: require("../images/avatars/2.jpg"),
+          title: "Husbands ask repeated resolved but laughter debating",
+          body:
+            "It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears...",
+          date: "29 February 2019"
+        },
+        {
+          author: "John James",
+          authorAvatar: require("../images/avatars/2.jpg"),
+          title: "Husbands ask repeated resolved but laughter debating",
+          body:
+            "It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears...",
+          date: "29 February 2019"
+        },
+        {
+          author: "John James",
+          authorAvatar: require("../images/avatars/2.jpg"),
+          title: "Husbands ask repeated resolved but laughter debating",
+          body:
+            "It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears...",
+          date: "29 February 2019"
+        },
+        {
+          author: "John James",
+          authorAvatar: require("../images/avatars/2.jpg"),
+          title: "Husbands ask repeated resolved but laughter debating",
+          body:
+            "It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears...",
+          date: "29 February 2019"
+        },
       ],
 
       // Fourth list of posts.
+
       PostsListFour: [
         {
           backgroundImage: require("../images/content-management/7.jpeg"),
@@ -190,7 +241,8 @@ class BlogPosts extends React.Component {
         </Row>
 
         {/* First Row of Posts */}
-        <Row>
+        
+       {/*<Row>
           {PostsListOne.map((post, idx) => (
             <Col lg="3" md="6" sm="12" className="mb-4" key={idx}>
               <Card small className="card-post card-post--1">
@@ -226,10 +278,11 @@ class BlogPosts extends React.Component {
               </Card>
             </Col>
           ))}
-        </Row>
+        </Row>*/}
 
         {/* Second Row of Posts */}
-        <Row>
+        
+        {/*<Row>
           {PostsListTwo.map((post, idx) => (
             <Col lg="6" sm="12" className="mb-4" key={idx}>
               <Card small className="card-post card-post--aside card-post--1">
@@ -266,6 +319,7 @@ class BlogPosts extends React.Component {
             </Col>
           ))}
         </Row>
+          */}
 
         {/* Third Row of Posts */}
         <Row>
@@ -303,39 +357,9 @@ class BlogPosts extends React.Component {
           ))}
         </Row>
 
-        {/* Fourth Row of posts */}
-        <Row>
-          {PostsListFour.map((post, idx) => (
-            <Col lg="3" md="6" sm="12" className="mb-4" key={idx}>
-              <Card small className="card-post h-100">
-                <div
-                  className="card-post__image"
-                  style={{ backgroundImage: `url('${post.backgroundImage}')` }}
-                />
-                <CardBody>
-                  <h5 className="card-title">
-                    <a className="text-fiord-blue" href="#">
-                      {post.title}
-                    </a>
-                  </h5>
-                  <p className="card-text">{post.body}</p>
-                </CardBody>
-                <CardFooter className="text-muted border-top py-3">
-                  <span className="d-inline-block">
-                    By
-                    <a className="text-fiord-blue" href={post.authorUrl}>
-                      {post.author}
-                    </a>{" "}
-                    in
-                    <a className="text-fiord-blue" href={post.categoryUrl}>
-                      {post.category}
-                    </a>
-                  </span>
-                </CardFooter>
-              </Card>
-            </Col>
-          ))}
-        </Row>
+        {/* Fourth Row of posts in Text Document */}
+        
+        
       </Container>
     );
   }
