@@ -13,11 +13,19 @@ import TopReferrals from "../components/common/TopReferrals";
 const BlogOverview = ({ smallStats }) => (
   <Container fluid className="main-content-container px-4">
     {/* Page Header */}
-    <Row noGutters className="page-header py-4">
-      <PageTitle title="Blog Overview" subtitle="Dashboard" className="text-sm-left mb-3" />
+    <Row noGutters className="page-header py-5">
+      <h1>SCRIPTHUB</h1>
     </Row>
-
-    {/* Small Stats Blocks */}
+    <div class="row row-dash">
+      <div class="col-sm-6">
+    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+    </div>
+      <div class="col-sm-6">
+    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+    </div>
+    </div>
+    
+    {/* Small Stats Blocks 
     <Row>
       {smallStats.map((stats, idx) => (
         <Col className="col-lg mb-4" key={idx} {...stats.attrs}>
@@ -34,33 +42,34 @@ const BlogOverview = ({ smallStats }) => (
           />
         </Col>
       ))}
-    </Row>
+    </Row>*/}
+
 
     <Row>
-      {/* Users Overview */}
+      {/* Users Overview 
       <Col lg="8" md="12" sm="12" className="mb-4">
         <UsersOverview />
-      </Col>
+      </Col>*/}
 
-      {/* Users by Device */}
+      {/* Users by Device
       <Col lg="4" md="6" sm="12" className="mb-4">
         <UsersByDevice />
       </Col>
 
-      {/* New Draft */}
+      {/* New Draft 
       <Col lg="4" md="6" sm="12" className="mb-4">
         <NewDraft />
-      </Col>
+      </Col>*/}
 
-      {/* Discussions */}
+      {/* Discussions 
       <Col lg="5" md="12" sm="12" className="mb-4">
         <Discussions />
-      </Col>
+      </Col>*/}
 
-      {/* Top Referrals */}
+      {/* Top Referrals 
       <Col lg="3" md="12" sm="12" className="mb-4">
         <TopReferrals />
-      </Col>
+      </Col>*/}
     </Row>
   </Container>
 );
