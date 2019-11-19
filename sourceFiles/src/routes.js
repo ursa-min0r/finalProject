@@ -8,7 +8,7 @@ import { DefaultLayout } from "./layouts";
 import BlogOverview from "./views/BlogOverview";
 import UserProfileLite from "./views/UserProfileLite";
 import AddNewPost from "./views/AddNewPost";
-import Errors from "./views/Errors";
+import Errors from "./views/Tutorials";
 import ComponentsOverview from "./views/ComponentsOverview";
 import Tables from "./views/Tables";
 import BlogPosts from "./views/BlogPosts";
@@ -36,7 +36,7 @@ export default [
     component: AddNewPost
   },
   {
-    path: "/errors",
+    path: "/tutorials",
     layout: DefaultLayout,
     component: Errors
   },

@@ -33,9 +33,9 @@ export default function() {
       to: "/user-profile-lite",
     },
     {
-      title: "Errors",
+      title: "Tutorials",
       htmlBefore: '<i class="material-icons">error</i>',
-      to: "/errors",
+      to: "/tutorials",
     }
   ];
 }
