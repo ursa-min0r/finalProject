@@ -2,14 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col } from "shards-react";
 
-import PageTitle from "../components/common/PageTitle";
-import SmallStats from "../components/common/SmallStats";
-import UsersOverview from "../components/blog/UsersOverview";
-import UsersByDevice from "../components/blog/UsersByDevice";
-import NewDraft from "../components/blog/UsersOverview";
-import Discussions from "../components/blog/Discussions";
-import TopReferrals from "../components/common/TopReferrals";
-
 const BlogOverview = ({ smallStats }) => (
   <Container fluid className="main-content-container px-4">
     {/* Page Header */}
@@ -18,11 +10,9 @@ const BlogOverview = ({ smallStats }) => (
     </Row>
     <div class="row row-dash">
       <div class="col-sm-6">
-    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-    </div>
-      <div class="col-sm-6">
-    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-    </div>
+
+ 
+  </div>
     </div>
     
     {/* Small Stats Blocks 

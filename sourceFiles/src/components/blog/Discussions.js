@@ -46,7 +46,7 @@ const Discussions = ({ title, discussions }) => (
             <div className="blog-comments__actions">
               <ButtonGroup size="sm">
                 <Button theme="white">
-                  <span className="text-success">
+                  <span className="text-dark">
                     <i className="material-icons">check</i>
                   </span>{" "}
                   Approve
@@ -55,10 +55,10 @@ const Discussions = ({ title, discussions }) => (
                   <span className="text-danger">
                     <i className="material-icons">clear</i>
                   </span>{" "}
-                  Reject
+                  Clear
                 </Button>
                 <Button theme="white">
-                  <span className="text-light">
+                  <span className="text-dark">
                     <i className="material-icons">more_vert</i>
                   </span>{" "}
                   Edit

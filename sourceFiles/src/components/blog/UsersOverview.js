@@ -1,17 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Row, Col, Card, CardHeader, CardBody, Button } from "shards-react";
-
 import RangeDatePicker from "../common/RangeDatePicker";
 import Chart from "../../utils/chart";
-
 class UsersOverview extends React.Component {
   constructor(props) {
     super(props);
-
     this.canvasRef = React.createRef();
   }
-
   componentDidMount() {
     const chartOptions = {
       ...{
@@ -67,24 +63,20 @@ class UsersOverview extends React.Component {
       },
       ...this.props.chartOptions
     };
-
     const BlogUsersOverview = new Chart(this.canvasRef.current, {
       type: "LineWithLine",
       data: this.props.chartData,
       options: chartOptions
     });
-
     // They can still be triggered on hover.
     const buoMeta = BlogUsersOverview.getDatasetMeta(0);
     buoMeta.data[0]._model.radius = 0;
     buoMeta.data[
       this.props.chartData.datasets[0].data.length - 1
     ]._model.radius = 0;
-
     // Render the chart.
     BlogUsersOverview.render();
   }
-
   render() {
     const { title } = this.props;
     return (
@@ -116,7 +108,6 @@ class UsersOverview extends React.Component {
     );
   }
 }
-
 UsersOverview.propTypes = {
   /**
    * The component's title.
@@ -131,7 +122,6 @@ UsersOverview.propTypes = {
    */
   chartOptions: PropTypes.object
 };
-
 UsersOverview.defaultProps = {
   title: "Users Overview",
   chartData: {
@@ -228,5 +218,4 @@ UsersOverview.defaultProps = {
     ]
   }
 };
-
 export default UsersOverview;
