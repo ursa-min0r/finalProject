@@ -42,25 +42,17 @@ MainFooter.defaultProps = {
   copyright: "Copyright © 2018 DesignRevision",
   menuItems: [
     {
-      title: "Home",
-      to: "#"
-    },
-    {
-      title: "Services",
-      to: "#"
-    },
-    {
       title: "About",
       to: "#"
     },
     {
-      title: "Products",
+      title: "FAQ",
       to: "#"
     },
     {
-      title: "Blog",
+      title: "Help",
       to: "#"
-    }
+    },
   ]
 };
 

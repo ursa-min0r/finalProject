@@ -46,7 +46,7 @@ export default class Notifications extends React.Component {
               <span className="notification__category">Analytics</span>
               <p>
                 Your website’s active users count increased by{" "}
-                <span className="text-success text-semibold">28%</span> in the
+                <span className="text-orange text-semibold">28%</span> in the
                 last week. Great job!
               </p>
             </div>
