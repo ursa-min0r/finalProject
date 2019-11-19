@@ -227,10 +227,7 @@ class BlogPosts extends React.Component {
 
   render() {
     const {
-      PostsListOne,
-      PostsListTwo,
       PostsListThree,
-      PostsListFour
     } = this.state;
 
     return (
