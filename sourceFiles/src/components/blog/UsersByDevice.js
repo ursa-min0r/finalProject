@@ -9,16 +9,12 @@ import {
   CardBody,
   CardFooter
 } from "shards-react";
-
 import Chart from "../../utils/chart";
-
 class UsersByDevice extends React.Component {
   constructor(props) {
     super(props);
-
     this.canvasRef = React.createRef();
   }
-
   componentDidMount() {
     const chartConfig = {
       type: "pie",
@@ -42,10 +38,8 @@ class UsersByDevice extends React.Component {
         ...this.props.chartOptions
       }
     };
-
     new Chart(this.canvasRef.current, chartConfig);
   }
-
   render() {
     const { title } = this.props;
     return (
@@ -85,7 +79,6 @@ class UsersByDevice extends React.Component {
     );
   }
 }
-
 UsersByDevice.propTypes = {
   /**
    * The component's title.
@@ -104,7 +97,6 @@ UsersByDevice.propTypes = {
    */
   chartData: PropTypes.object
 };
-
 UsersByDevice.defaultProps = {
   title: "Users by device",
   chartData: {
@@ -122,5 +114,5 @@ UsersByDevice.defaultProps = {
     labels: ["Desktop", "Tablet", "Mobile"]
   }
 };
-
 export default UsersByDevice;
+

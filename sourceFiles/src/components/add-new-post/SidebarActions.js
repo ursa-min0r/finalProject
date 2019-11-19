@@ -30,7 +30,7 @@ const SidebarActions = ({ title }) => (
           <span className="d-flex mb-2">
             <i className="material-icons mr-1">visibility</i>
             <strong className="mr-1">Visibility:</strong>{" "}
-            <strong className="text-success">Public</strong>{" "}
+            <strong className="text-dark">Public</strong>{" "}
             <a className="ml-auto" href="#">
               Edit
             </a>
@@ -45,7 +45,7 @@ const SidebarActions = ({ title }) => (
           <span className="d-flex">
             <i className="material-icons mr-1">score</i>
             <strong className="mr-1">Readability:</strong>{" "}
-            <strong className="text-warning">Ok</strong>
+            <strong className="text-dark">Ok</strong>
           </span>
         </ListGroupItem>
         <ListGroupItem className="d-flex px-3 border-0">
