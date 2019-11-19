@@ -22,6 +22,11 @@ export default function() {
       htmlBefore: '<i class="material-icons">person</i>',
       to: "/user-profile-lite",
     },
+    {
+      title: "Tutorials",
+      htmlBefore: '<i class="material-icons">error</i>',
+      to: "/tutorials",
+    }
   
   ];
 }
