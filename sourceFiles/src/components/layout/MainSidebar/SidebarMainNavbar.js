@@ -34,7 +34,7 @@ class SidebarMainNavbar extends React.Component {
               <img
                 id="main-logo"
                 className="d-inline-block align-top mr-1"
-                style={{ maxWidth: "240px" }}
+                style={{ width: "100%" }}
                 src={require("../../../images/scriptHubHeader.png")}
                 alt="scriptHub Dashboard"
               />
