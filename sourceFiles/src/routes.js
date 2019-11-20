@@ -5,24 +5,24 @@ import { Redirect } from "react-router-dom";
 import { DefaultLayout } from "./layouts";
 
 // Route Views
-import BlogOverview from "./views/BlogOverview";
+import Dashboard from "./views/Dashboard";
 import UserProfileLite from "./views/UserProfileLite";
 import AddNewPost from "./views/AddNewPost";
 import Tutorials from "./views/Tutorials";
 
-import BlogPosts from "./views/BlogPosts";
+import Meetups from "./views/Meetups";
 
 export default [
   {
     path: "/",
     exact: true,
     layout: DefaultLayout,
-    component: () => <Redirect to="/blog-overview" />
+    component: () => <Redirect to="/Dashboard" />
   },
   {
-    path: "/blog-overview",
+    path: "/dashboard",
     layout: DefaultLayout,
-    component: BlogOverview
+    component: Dashboard
   },
   {
     path: "/user-profile-lite",
@@ -41,8 +41,8 @@ export default [
   },
 
   {
-    path: "/blog-posts",
+    path: "/meetups",
     layout: DefaultLayout,
-    component: BlogPosts
+    component: Meetups
   }
 ];

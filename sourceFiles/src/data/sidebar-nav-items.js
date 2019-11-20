@@ -2,7 +2,7 @@ export default function() {
   return [
     {
       title: "Dashboard",
-      to: "/blog-overview",
+      to: "/dashboard",
       htmlBefore: '<i class="material-icons">apps</i>',
       htmlAfter: ""
     },
@@ -10,7 +10,7 @@ export default function() {
     {
       title: "Meetups",
       htmlBefore: '<i class="material-icons">group</i>',
-      to: "/blog-posts",
+      to: "/meetups",
     },
     {
       title: "New Post",

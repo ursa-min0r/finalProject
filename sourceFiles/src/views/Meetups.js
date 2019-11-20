@@ -8,7 +8,7 @@ import {
 
 import PageTitle from "../components/common/PageTitle";
 
-class BlogPosts extends React.Component {
+class Meetups extends React.Component {
   constructor(props) {
     super(props);
 
@@ -133,4 +133,4 @@ class BlogPosts extends React.Component {
   }
 }
 
-export default BlogPosts;
+export default Meetups;

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Container, Row,} from "shards-react";
 
-const BlogOverview = ({ smallStats }) => (
+const Dashboard = ({ smallStats }) => (
   <Container fluid className="main-content-container px-4">
     {/* Page Header */}
     <Row noGutters className="page-header py-5">
@@ -66,14 +66,14 @@ const BlogOverview = ({ smallStats }) => (
   </Container>
 );
 
-BlogOverview.propTypes = {
+Dashboard.propTypes = {
   /**
    * The small stats dataset.
    */
   smallStats: PropTypes.array
 };
 
-BlogOverview.defaultProps = {
+Dashboard.defaultProps = {
   smallStats: [
     {
       label: "Posts",
@@ -133,4 +133,4 @@ BlogOverview.defaultProps = {
   ]
 };
 
-export default BlogOverview;
+export default Dashboard;
