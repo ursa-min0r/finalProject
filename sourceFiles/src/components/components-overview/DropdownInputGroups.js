@@ -36,10 +36,10 @@ class DropdownInputGroups extends React.Component {
             toggle={() => this.toggle("dropdown1")}
             addonType="append"
           >
-            <DropdownToggle caret>Dropdown</DropdownToggle>
+            <DropdownToggle caret>Menu</DropdownToggle>
             <DropdownMenu small right>
-              <DropdownItem>Action</DropdownItem>
-              <DropdownItem>Another action</DropdownItem>
+              <DropdownItem>Logout</DropdownItem>
+              <DropdownItem>Profile</DropdownItem>
               <DropdownItem>Something else here</DropdownItem>
             </DropdownMenu>
           </Dropdown>
