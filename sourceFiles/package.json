@@ -2,6 +2,10 @@
   "name": "shards-dashboard-lite-react",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "npm": "6.12.0",
+    "node": "v12.5.0"
+  },
   "homepage": "./",
   "dependencies": {
     "camelize": "^1.0.0",
