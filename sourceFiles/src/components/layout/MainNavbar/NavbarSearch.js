@@ -1,10 +1,6 @@
 import React from "react";
 import {
-  Form,
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText,
-  FormInput
+  Form
 } from "shards-react";
 
 export default () => (

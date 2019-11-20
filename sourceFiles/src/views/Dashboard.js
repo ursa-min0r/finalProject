@@ -1,136 +1,43 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { Container, Row,} from "shards-react";
+import "../views/dashcomponents/dash.css";
 
-const Dashboard = ({ smallStats }) => (
-  <Container fluid className="main-content-container px-4">
-    {/* Page Header */}
-    <Row noGutters className="page-header py-5">
-      
-    </Row>
-    <div class="row row-dash">
-      <div class="col-sm-6">
-    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-    </div>
-      <div class="col-sm-6">
-    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-    </div>
-    </div>
-    
-    {/* Small Stats Blocks 
-    <Row>
-      {smallStats.map((stats, idx) => (
-        <Col className="col-lg mb-4" key={idx} {...stats.attrs}>
-          <SmallStats
-            id={`small-stats-${idx}`}
-            variation="1"
-            chartData={stats.datasets}
-            chartLabels={stats.chartLabels}
-            label={stats.label}
-            value={stats.value}
-            percentage={stats.percentage}
-            increase={stats.increase}
-            decrease={stats.decrease}
-          />
-        </Col>
-      ))}
-    </Row>*/}
-
-
-    <Row>
-      {/* Users Overview 
-      <Col lg="8" md="12" sm="12" className="mb-4">
-        <UsersOverview />
-      </Col>*/}
-
-      {/* Users by Device
-      <Col lg="4" md="6" sm="12" className="mb-4">
-        <UsersByDevice />
-      </Col>
-
-      {/* New Draft 
-      <Col lg="4" md="6" sm="12" className="mb-4">
-        <NewDraft />
-      </Col>*/}
-
-      {/* Discussions 
-      <Col lg="5" md="12" sm="12" className="mb-4">
-        <Discussions />
-      </Col>*/}
-
-      {/* Top Referrals 
-      <Col lg="3" md="12" sm="12" className="mb-4">
-        <TopReferrals />
-      </Col>*/}
-    </Row>
-  </Container>
-);
-
-Dashboard.propTypes = {
-  /**
-   * The small stats dataset.
-   */
-  smallStats: PropTypes.array
-};
-
-Dashboard.defaultProps = {
-  smallStats: [
-    {
-      label: "Posts",
-      value: "2,390",
-      percentage: "4.7%",
-      increase: true,
-      chartLabels: [null, null, null, null, null, null, null],
-      attrs: { md: "6", sm: "6" },
-      datasets: [
-        {
-          label: "Today",
-          fill: "start",
-          borderWidth: 1.5,
-          backgroundColor: "rgba(0, 184, 216, 0.1)",
-          borderColor: "rgb(0, 184, 216)",
-          data: [1, 2, 1, 3, 5, 4, 7]
-        }
-      ]
-    },
-    {
-      label: "Pages",
-      value: "182",
-      percentage: "12.4",
-      increase: true,
-      chartLabels: [null, null, null, null, null, null, null],
-      attrs: { md: "6", sm: "6" },
-      datasets: [
-        {
-          label: "Today",
-          fill: "start",
-          borderWidth: 1.5,
-          backgroundColor: "rgba(23,198,113,0.1)",
-          borderColor: "rgb(23,198,113)",
-          data: [1, 2, 3, 3, 3, 4, 4]
-        }
-      ]
-    },
-    {
-      label: "Comments",
-      value: "8,147",
-      percentage: "3.8%",
-      increase: false,
-      decrease: true,
-      chartLabels: [null, null, null, null, null, null, null],
-      attrs: { md: "4", sm: "6" },
-      datasets: [
-        {
-          label: "Today",
-          fill: "start",
-          borderWidth: 1.5,
-          backgroundColor: "rgba(255,180,0,0.1)",
-          borderColor: "rgb(255,180,0)",
-          data: [2, 3, 3, 3, 4, 3, 3]
-        }
-      ]
-    },
-  ]
-};
+class Dashboard extends React.Component {
+  render() {
+    return (
+      <div className="dashcontain">
+        <div className="pagehead">
+          <h1>What's New</h1>
+        </div>
+        <div className="catname">
+          <div className="meetsandevents">
+          <div className="meeteventhead">
+            <p>Meetups and Events</p>
+          </div>
+          <div className="catcontent">
+            <div className="box">
+              <p>item</p>
+            </div>
+            <div className="box">
+              <p>item</p>
+            </div>
+            <div className="box">
+              <p>item</p>
+            </div>
+            <div className="box">
+              <p>item</p>
+            </div>
+          </div>
+          </div>
+          <div className="newshead">
+            <p>News</p>
+          </div>
+          <div className="tutorialshead">
+            <p>Recommended Tutorials</p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
 
 export default Dashboard;
