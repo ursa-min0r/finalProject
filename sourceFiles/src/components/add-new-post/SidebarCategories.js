@@ -21,14 +21,14 @@ const SidebarCategories = ({ title }) => (
     <CardBody className="p-0">
       <ListGroup flush>
         <ListGroupItem className="px-3 pb-2">
-          <FormCheckbox className="mb-1" value="development">
-            Event
+          <FormCheckbox className="mb-1" value="">
+            Code
           </FormCheckbox>
-          <FormCheckbox className="mb-1" value="writing">
-            Meetup
+          <FormCheckbox className="mb-1" value="">
+            Tutorials
           </FormCheckbox>
-          <FormCheckbox className="mb-1" value="books">
-            Class
+          <FormCheckbox className="mb-1" value="">
+            Meetups and Events
           </FormCheckbox>
         </ListGroupItem>
 
