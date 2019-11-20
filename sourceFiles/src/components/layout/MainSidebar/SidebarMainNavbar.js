@@ -34,14 +34,12 @@ class SidebarMainNavbar extends React.Component {
               <img
                 id="main-logo"
                 className="d-inline-block align-top mb-2"
-                style={{ width: "100%" }}
+                style={{ width: "150px" }}
                 src={require("../../../images/scriptHubHeader.png")}
                 alt="scriptHub Dashboard"
               />
               {!hideLogoText && (
-                <span className="d-none d-md-inline ml-1">
-                  scripthub
-                </span>
+                <div></div>
               )}
             </div>
           </NavbarBrand>
