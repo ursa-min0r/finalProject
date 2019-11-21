@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Navbar, NavbarBrand } from "shards-react";
 
 import { Dispatcher, Constants } from "../../../flux";
+import { Link } from 'react-router-dom';
 
 class SidebarMainNavbar extends React.Component {
   constructor(props) {
@@ -31,13 +32,14 @@ class SidebarMainNavbar extends React.Component {
             style={{ lineHeight: "25px" }}
           >
             <div className="d-table m-auto">
+            <Link to="/dashboard">
               <img
                 id="main-logo"
                 className="d-inline-block align-top mb-2"
                 style={{ width: "150px" }}
                 src={require("../../../images/scriptHubHeader.png")}
                 alt="scriptHub Dashboard"
-              />
+              /></Link>
               {!hideLogoText && (
                 <div></div>
               )}
