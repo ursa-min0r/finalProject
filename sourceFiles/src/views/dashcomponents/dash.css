@@ -1,13 +1,15 @@
 .dashcontain {
-    padding: 1em;
+    height: 100%;
+    width: 100%;
+    padding: 2em;
 }
 
 /* MEETUPS AND EVENTS */
 
 .meetupswrap {
     float: left;
-    width: 70%;
-    background-color: #e8e7e3;
+    width: 100%;
+    background-color: #fff;
     border-radius: 25px;
     padding-bottom: 2em;
     margin-bottom: 2em;
@@ -25,9 +27,9 @@
 /* NEWS */
 
 .newswrap {
-    background-color: #e8e7e3;
+    background-color: #fff;
     float: left;
-    width: 70%;
+    width: 100%;
     border-radius: 25px;
     padding-bottom: 2em;
     margin-bottom: 2em;
