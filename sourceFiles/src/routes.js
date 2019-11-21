@@ -11,13 +11,14 @@ import AddNewPost from "./views/AddNewPost";
 import Tutorials from "./views/Tutorials";
 
 import Meetups from "./views/Meetups";
+import Login from "./views/Login"
 
 export default [
   {
     path: "/",
     exact: true,
     layout: DefaultLayout,
-    component: () => <Redirect to="/Dashboard" />
+    component: () => <Redirect to="/login" />
   },
   {
     path: "/dashboard",
@@ -44,5 +45,10 @@ export default [
     path: "/meetups",
     layout: DefaultLayout,
     component: Meetups
+  },
+  {
+    path: "/login",
+    layout: DefaultLayout,
+    component: Login
   }
 ];
