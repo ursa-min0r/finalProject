@@ -11,7 +11,8 @@ import AddNewPost from "./views/AddNewPost";
 import Tutorials from "./views/Tutorials";
 
 import Meetups from "./views/Meetups";
-import Login from "./views/Login"
+import Login from "./views/Login";
+import Registration from "./views/Registration";
 
 export default [
   {
@@ -50,5 +51,10 @@ export default [
     path: "/login",
     layout: DefaultLayout,
     component: Login
+  },
+  {
+    path: "/registration",
+    layout: DefaultLayout,
+    component: Registration
   }
 ];
