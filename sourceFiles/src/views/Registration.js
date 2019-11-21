@@ -33,7 +33,7 @@ class Registration extends React.Component {
                                     <input id="customCheck1" type="checkbox" checked className="custom-control-input"></input>
                                     <label for="customCheck1" className="custom-control-label">Remember Password?</label>
                                 </div>
-                                <button type="submit" className="btn btn-dark btn-block text-uppercase mb-2 rounded-pill shadow-sm">CREATE ACCOUNT</button>
+                                <button type="submit" className="btn btn-dark btn-block text-uppercase mb-2 rounded-pill shadow-sm">SIGN UP</button>
                                 <div className="text-center d-flex justify-content-between mt-4"> 
                                 </div>
                             </form>
