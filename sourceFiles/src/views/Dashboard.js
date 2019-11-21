@@ -5,12 +5,13 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div className="dashcontain">
-        <div className="pagehead">
-          <h1>What's New</h1>
-        </div>
+
         <div className="meetupswrap">
           <div className="meetupheader">
-            <p>/MEETUPS AND EVENTS</p>
+            <div className="imageButton"><img
+              src={require("../../src/images/2.png")} alt="Header" width="1000px" height="100px" className="center" />
+            </div>
+
           </div>
           <div className="meetupcontent">
             <div className="box">
@@ -29,7 +30,9 @@ class Dashboard extends React.Component {
         </div>
         <div className="newswrap">
           <div className="newsheader">
-            <p>/NEWS</p>
+            <div className="imageButton"><img
+              src={require("../../src/images/1.png")} alt="Header" width="1000px" height="100px" className="center" />
+              </div>
           </div>
           <div className="newscontent">
             <div className="box">
@@ -47,9 +50,12 @@ class Dashboard extends React.Component {
           </div>
         </div>
 
-        <div className="newswrap">
-          <div className="newsheader">
-            <p>/FORUM</p>
+        <div className="forumwrap">
+          <div className="forumheader">
+            <div className="imageButton">
+            <img
+              src={require("../../src/images/3.png")} alt="Header" width="1000px" height="100px" className="center" />
+          </div>
           </div>
           <div className="newscontent">
             <div className="box">
@@ -67,9 +73,12 @@ class Dashboard extends React.Component {
           </div>
         </div>
 
-        <div className="newswrap">
-          <div className="newsheader">
-            <p>/RECOMMENDED TUTORIALS</p>
+        <div className="tutorwrap">
+          <div className="tutorheader">
+            <div className="imageButton">
+            <img
+              src={require("../../src/images/4.png")} alt="Header" width="1000px" height="100px" className="center" />
+          </div>
           </div>
           <div className="newscontent">
             <div className="box">
