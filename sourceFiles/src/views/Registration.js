@@ -1,5 +1,6 @@
 import React from "react";
 import "./login.css"
+import { Link } from 'react-router-dom';
 
 class Registration extends React.Component {
   render() {
@@ -34,6 +35,10 @@ class Registration extends React.Component {
                                     <label for="customCheck1" className="custom-control-label">Remember Password?</label>
                                 </div>
                                 <button type="submit" className="btn btn-dark btn-block text-uppercase mb-2 rounded-pill shadow-sm">SIGN UP</button>
+                                <div>Already have an account? Login!</div>
+                                <Link to="/login">
+                                <button className="btn btn-dark btn-block text-uppercase mb-2 rounded-pill shadow-sm"  variant="contained" color="primary">LOGIN</button>
+                                </Link>
                                 <div className="text-center d-flex justify-content-between mt-4"> 
                                 </div>
                             </form>
