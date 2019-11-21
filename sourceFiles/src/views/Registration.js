@@ -15,8 +15,7 @@ class Registration extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-10 col-xl-7 mx-auto">
-                            <h3 className="display-4"></h3>
-                            <p className="text-muted mb-4">Register for cookies!</p>
+                        <img src={require("../../src/images/scriptHub.png")} alt="Header" width="300px" height="300px"/>
                             <form>
                             <div className="form-group mb-3">
                                     <input id="inputName" type="name" placeholder="Enter name" required="" autofocus="" className="form-control rounded-pill border-0 shadow-sm px-4"></input>
@@ -32,9 +31,9 @@ class Registration extends React.Component {
                                 </div>
                                 <div className="custom-control custom-checkbox mb-3">
                                     <input id="customCheck1" type="checkbox" checked className="custom-control-input"></input>
-                                    <label for="customCheck1" className="custom-control-label">Remember password</label>
+                                    <label for="customCheck1" className="custom-control-label">Remember Password?</label>
                                 </div>
-                                <button type="submit" className="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
+                                <button type="submit" className="btn btn-dark btn-block text-uppercase mb-2 rounded-pill shadow-sm">CREATE ACCOUNT</button>
                                 <div className="text-center d-flex justify-content-between mt-4"> 
                                 </div>
                             </form>

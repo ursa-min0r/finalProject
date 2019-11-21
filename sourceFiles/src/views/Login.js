@@ -33,10 +33,10 @@ class Login extends React.Component {
 
                                 
 
-                                <button type="submit" className="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
-                                <div>Don't have an account? Click below and make an account.</div>
+                                <button type="submit" className="btn btn-dark btn-block text-uppercase mb-2 rounded-pill shadow-sm">SIGN IN</button>
+                                <div>Don't have an account? Sign up below.</div>
                                 <Link to="/registration">
-                                <button className="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm"  variant="contained" color="primary">Create Account</button>
+                                <button className="btn btn-dark btn-block text-uppercase mb-2 rounded-pill shadow-sm"  variant="contained" color="primary">SIGN UP</button>
                                 </Link>
                                 <div className="text-center d-flex justify-content-between mt-4"> 
                                 </div>
