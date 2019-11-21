@@ -5,37 +5,91 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div className="dashcontain">
+        
         <div className="pagehead">
           <h1>What's New</h1>
         </div>
-        <div className="catname">
-          <div className="meetsandevents">
-          <div className="meeteventhead">
-            <p>Meetups and Events</p>
-          </div>
-          <div className="catcontent">
-            <div className="box">
-              <p>item</p>
+
+          <div className="meetupswrap">
+            <div className="meetupheader">
+              <p>/MEETUPS AND EVENTS</p>
             </div>
-            <div className="box">
-              <p>item</p>
+              <div className="meetupcontent">
+                <div className="box">
+                <p>Item</p>
+                </div>
+                <div className="box">
+                <p>Item</p>
+                </div>
+                <div className="box">
+                <p>Item</p>
+                </div>
+                <div className="box">
+                <p>Item</p>
+                </div>
+              </div>
+          </div>
+
+          <div className="newswrap">
+            <div className="newsheader">
+              <p>/NEWS</p>
             </div>
-            <div className="box">
-              <p>item</p>
+              <div className="newscontent">
+              <div className="box">
+                <p>Item</p>
+                </div>
+                <div className="box">
+                <p>Item</p>
+                </div>
+                <div className="box">
+                <p>Item</p>
+                </div>
+                <div className="box">
+                <p>Item</p>
+                </div>
+              </div>
+          </div>
+
+          <div className="newswrap">
+            <div className="newsheader">
+              <p>/FORUM</p>
             </div>
-            <div className="box">
-              <p>item</p>
+              <div className="newscontent">
+              <div className="box">
+                <p>Item</p>
+                </div>
+                <div className="box">
+                <p>Item</p>
+                </div>
+                <div className="box">
+                <p>Item</p>
+                </div>
+                <div className="box">
+                <p>Item</p>
+                </div>
+              </div>
+          </div>
+
+          <div className="newswrap">
+            <div className="newsheader">
+              <p>/RECOMMENDED TUTORIALS</p>
             </div>
+              <div className="newscontent">
+              <div className="box">
+                <p>Item</p>
+                </div>
+                <div className="box">
+                <p>Item</p>
+                </div>
+                <div className="box">
+                <p>Item</p>
+                </div>
+                <div className="box">
+                <p>Item</p>
+                </div>
+              </div>
           </div>
-          </div>
-          <div className="newshead">
-            <p>News</p>
-          </div>
-          <div className="tutorialshead">
-            <p>Recommended Tutorials</p>
-          </div>
-        </div>
-      </div>
+    </div>
     )
   }
 }

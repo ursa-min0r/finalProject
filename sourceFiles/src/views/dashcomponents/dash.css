@@ -2,24 +2,50 @@
     padding: 1em;
 }
 
-.catname {
-    font-size: 20px;
-    padding: 1em;
+/* MEETUPS AND EVENTS */
+
+.meetupswrap {
+    float: left;
+    width: 70%;
+    background-color: #e8e7e3;
+    border-radius: 25px;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
 }
 
-.catcontent {
-    padding-bottom: 1em;
-    display: table;
-    clear: both;
+.meetupheader {
+    color: orange;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    font-size: 20px;
 }
+
+
+
+/* NEWS */
+
+.newswrap {
+    background-color: #e8e7e3;
+    float: left;
+    width: 70%;
+    border-radius: 25px;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.newsheader {
+    color: orange;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    font-size: 20px;
+}
+
 
 .box {
     border-style: solid;
     border-width: 5px;
     border-color: black;
-    margin-left: 1em;
-    padding: 1em;
-    float: left;
+    margin-right: 3em;
     width: 20%;
-    height: 150px;
+    float: left;
 }
