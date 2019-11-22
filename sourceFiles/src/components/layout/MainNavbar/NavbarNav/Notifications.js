@@ -26,8 +26,8 @@ export default class Notifications extends React.Component {
           onClick={this.toggleNotifications}
         >
           <div className="nav-link-icon__wrapper">
-            <i className="material-icons">&#xE7F4;</i>
-            <Badge pill theme="danger">
+            <i className="material-icons">notification_important</i>
+            <Badge variant="warning" pill theme="warning">
               2
             </Badge>
           </div>
@@ -39,30 +39,26 @@ export default class Notifications extends React.Component {
           <DropdownItem>
             <div className="notification__icon-wrapper">
               <div className="notification__icon">
-                <i className="material-icons">&#xE6E1;</i>
+                <i className="material-icons">comment</i>
               </div>
             </div>
             <div className="notification__content">
-              <span className="notification__category">Analytics</span>
+              <span className="notification__category">Blog</span>
               <p>
-                Your website’s active users count increased by{" "}
-                <span className="text-orange text-semibold">28%</span> in the
-                last week. Great job!
+                You have a new comment on your post!
               </p>
             </div>
           </DropdownItem>
           <DropdownItem>
             <div className="notification__icon-wrapper">
               <div className="notification__icon">
-                <i className="material-icons">&#xE8D1;</i>
+                <i className="material-icons">live_help</i>
               </div>
             </div>
             <div className="notification__content">
-              <span className="notification__category">Sales</span>
+              <span className="notification__category">Community</span>
               <p>
-                Last week your store’s sales count decreased by{" "}
-                <span className="text-danger text-semibold">5.52%</span>. It
-                could have been worse!
+                Someone asked you a question!
               </p>
             </div>
           </DropdownItem>
