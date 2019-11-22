@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 import {
   Card,
   CardHeader,
@@ -19,10 +20,10 @@ const UserDetails = ({ userDetails }) => (
           width="110"
         />
       </div>
-      <h4 className="mb-0">{userDetails.name}</h4>
+      <h4 className="mb-0 text-dark">{userDetails.name}</h4>
       <span className="text-muted d-block mb-2">{userDetails.jobTitle}</span>
-      <Button pill outline size="sm" className="mb-2">
-        <i className="material-icons mr-1">person_add</i> Connect
+      <Button pill variant="secondary" size="sm" className="mb-1 btn btn-dark">
+        <i className="material-icons mr-1">person_add</i> Merge
       </Button>
     </CardHeader>
     <ListGroup flush>
@@ -46,6 +47,7 @@ UserDetails.propTypes = {
 UserDetails.defaultProps = {
   userDetails: {
     name: "John Cena",
+    avatar: require("./../../images/profilePhoto.jpeg"),
     jobTitle: "Handsomest Man Alive",
     metaTitle: "Description",
     metaValue:

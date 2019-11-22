@@ -171,7 +171,7 @@ const UserAccountDetails = ({ title }) => (
                   <FormTextarea id="feDescription" rows="5" />
                 </Col>
               </Row>
-              <Button theme="accent">Update Account</Button>
+              <Button theme="dark">Update Account</Button>
             </Form>
           </Col>
         </Row>
