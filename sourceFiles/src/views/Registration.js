@@ -30,10 +30,6 @@ class Registration extends React.Component {
                                 <div className="form-group mb-3">
                                     <input id="inputPassword" type="password" placeholder="Reenter Password" required="" className="form-control rounded-pill border-0 shadow-sm px-4 text-primary"></input>
                                 </div>
-                                <div className="custom-control custom-checkbox mb-3">
-                                    <input id="customCheck1" type="checkbox" checked className="custom-control-input"></input>
-                                    <label for="customCheck1" className="custom-control-label">Remember Password?</label>
-                                </div>
                                 <button type="submit" className="btn btn-dark btn-block text-uppercase mb-2 rounded-pill shadow-sm">SIGN UP</button>
                                 <div>Already have an account? Login!</div>
                                 <Link to="/login">
