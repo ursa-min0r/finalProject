@@ -45,13 +45,11 @@ UserDetails.propTypes = {
 
 UserDetails.defaultProps = {
   userDetails: {
-    name: "Sierra Brooks",
-    jobTitle: "Project Manager",
-    performanceReportTitle: "Workload",
-    performanceReportValue: 74,
+    name: "John Cena",
+    jobTitle: "Handsomest Man Alive",
     metaTitle: "Description",
     metaValue:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda eligendi cumque?"
+      "If you can see this profile then it's not John Cena"
   }
 };
 
