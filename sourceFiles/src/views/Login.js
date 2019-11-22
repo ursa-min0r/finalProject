@@ -27,10 +27,7 @@ class Login extends React.Component {
                                 <div className="form-group mb-3">
                                     <input id="inputPassword" type="password" placeholder="Password" required="" className="form-control rounded-pill border-0 shadow-sm px-4 text-dark"></input>
                                 </div>
-                                <div className="custom-control custom-checkbox mb-3">
-                                    <input id="customCheck1" type="checkbox" checked className="custom-control-input"></input>
-                                    <label for="customCheck1" className="custom-control-label">Remember Password?</label>
-                                </div>
+                                
 
                                 
 
