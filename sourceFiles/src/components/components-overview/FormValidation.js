@@ -16,7 +16,7 @@ const FormValidation = () => (
       <Row form>
         <Col md="6" className="form-group">
           <FormInput
-            value="Vasile"
+            value="John"
             placeholder="First name"
             required
             valid
@@ -26,7 +26,7 @@ const FormValidation = () => (
         </Col>
         <Col md="6" className="form-group">
           <FormInput
-            value="Catalin"
+            value="Cena"
             placeholder="Last name"
             required
             valid
