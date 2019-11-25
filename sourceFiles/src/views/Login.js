@@ -17,7 +17,10 @@ class Login extends React.Component {
                     <div className="row">
                         <div className="col-lg-10 col-xl-7 mx-auto">
 
-                            <img className="logo" src={require("../../src/images/scriptHub.png")} alt="Header" width="300px" height="300px"/>
+
+                            <img
+                             src={require("../../src/images/scriptHub.gif")} alt="Header" width="450px" height="450px"/>
+
                             
                             <form>
                                 <div className="form-group mb-3">
@@ -30,11 +33,12 @@ class Login extends React.Component {
 
                                 
 
-                                <button type="submit" className="btn btn-dark btn-block text-uppercase mb-2 rounded-pill shadow-sm">SIGN IN</button>
-                                <div>Don't have an account? Sign up below.</div>
-                                
+                                <button type="submit" className="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">SIGN IN</button>
+                                <br></br>
+                                <div className="loginsubtxt">Don't have an account? Sign up below.</div>
+                                <br></br>
                                 <Link to="/registration">
-                                <button className="btn btn-dark btn-block text-uppercase mb-2 rounded-pill shadow-sm"  variant="contained" color="primary">CREATE AN ACCOUNT</button>
+                                <button className="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm"  variant="contained" color="primary">CREATE AN ACCOUNT</button>
                                 </Link>
                                 <div className="text-center d-flex justify-content-between mt-4"> 
                                 </div>

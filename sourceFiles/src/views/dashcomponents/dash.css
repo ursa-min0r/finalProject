@@ -91,7 +91,7 @@
 }
 
 .imageButton {
-
+    float: left;
 
     padding-bottom: 2em;
     margin-bottom: 1em;
