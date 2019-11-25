@@ -16,7 +16,7 @@ class Registration extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-10 col-xl-7 mx-auto">
-                        <img src={require("../../src/images/scriptHub.png")} alt="Header" width="300px" height="300px"/>
+                        <img className="logo" src={require("../../src/images/scriptHub.png")} alt="Header" width="300px" height="300px"/>
                             <form>
                             <div className="form-group mb-3">
                                     <input id="inputName" type="name" placeholder="Enter name" required="" autofocus="" className="form-control rounded-pill border-0 shadow-sm px-4"></input>
