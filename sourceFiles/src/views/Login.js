@@ -17,8 +17,10 @@ class Login extends React.Component {
                     <div className="row">
                         <div className="col-lg-10 col-xl-7 mx-auto">
 
+
                             <img
                              src={require("../../src/images/scriptHub.gif")} alt="Header" width="450px" height="450px"/>
+
                             
                             <form>
                                 <div className="form-group mb-3">
