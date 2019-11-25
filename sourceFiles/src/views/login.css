@@ -16,6 +16,15 @@ align-items: center;
 
 }
 
+.btn-primary {
+  background: #ff914d !important;
+  text-decoration: none;
+}
+
+.loginsubtxt {
+  text-align: center;
+}
+
 .customCheck1 {
 
 color: orange;

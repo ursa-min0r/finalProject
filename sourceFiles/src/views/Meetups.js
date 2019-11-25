@@ -9,9 +9,12 @@ import {
   Button
 } from "shards-react";
 
+
+
 class Meetups extends React.Component {
   constructor(props) {
     super(props);
+    
 
     this.state = {
       PostsListThree: []
@@ -23,41 +26,33 @@ class Meetups extends React.Component {
       PostsListThree: [
         {
           author: "John James",
-          authorAvatar: require("../images/scriptHubButton.png"),
-          title: "Had denoting properly jointure which well books beyond",
+          authorAvatar: require("../images/john_avatar.jpg"),
+          title: "Starbucks Frontend Developer Meetup!",
           body:
-            "In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son. Exeter longer wisdom work...",
-          date: "29 February 2019"
+            "Hey guys! All frontend developers welcome, we'll be meeting at the Starbucks off of Walnut Hill at 2:00pm.",
+          date: "14 November 2019"
         },
         {
-          author: "John James",
-          authorAvatar: require("../images/scriptHubButton.png"),
-          title: "Husbands ask repeated resolved but laughter debating",
+          author: "Amy Fuller",
+          authorAvatar: require("../images/amy_avatar.jpg"),
+          title: "Crypto Talk",
           body:
-            "It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears...",
-          date: "29 February 2019"
+            "Looking for anybody in Dallas who is interested in crypto. Going over the latest happenings in the market. Let's meet at Mimi's off of Northwest Hwy at around 3:30. ",
+          date: "16 November 2019"
         },
         {
-          author: "John James",
+          author: "Harmonic Software",
           authorAvatar: require("../images/scriptHubButton.png"),
           title:
-            "Instantly gentleman contained belonging exquisite now direction",
+            "Software Development Gathering",
           body:
-            "West room at sent if year. Numerous indulged distance old law you. Total state as merit court green decay he. Steepest merit checking railway...",
-          date: "29 February 2019"
+            "All skill levels welcome. All programming languages. Meet new people! Meet at the Dallas Makerspace at 2:00. ",
+          date: "17 November 2019"
         },
         {
           author: "John James",
           authorAvatar: require("../images/scriptHubButton.png"),
-          title: "Husbands ask repeated resolved but laughter debating",
-          body:
-            "It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears...",
-          date: "29 February 2019"
-        },
-        {
-          author: "John James",
-          authorAvatar: require("../images/scriptHubButton.png"),
-          title: "Husbands ask repeated resolved but laughter debating",
+          title: "Tech Trends",
           body:
             "It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears...",
           date: "29 February 2019"
@@ -65,7 +60,15 @@ class Meetups extends React.Component {
         {
           author: "John James",
           authorAvatar: require("../images/scriptHubButton.png"),
-          title: "Husbands ask repeated resolved but laughter debating",
+          title: "Womens Coding Meetup!",
+          body:
+            "It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears...",
+          date: "29 February 2019"
+        },
+        {
+          author: "John James",
+          authorAvatar: require("../images/scriptHubButton.png"),
+          title: "ReactJS Dallas Meetup",
           body:
             "It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears...",
           date: "29 February 2019"
