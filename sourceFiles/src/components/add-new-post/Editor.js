@@ -12,6 +12,7 @@ const Editor = () => (
         <FormInput size="lg" className="mb-3" placeholder="Your Post Title" />
         <ReactQuill className="add-new-post__editor mb-1" />
       </Form>
+ 
     </CardBody>
   </Card>
 );
