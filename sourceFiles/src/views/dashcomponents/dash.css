@@ -23,26 +23,6 @@
 }
 
 
-
-/* NEWS */
-
-.newswrap {
-    background-color: #545454;
-    float: left;
-    width: 100%;
-    border-radius: 25px;
-    padding-bottom: 2em;
-    margin-bottom: 2em;
-}
-
-.newsheader {
-    color: orange;
-    padding-left: 0.5em;
-    padding-top: 0.5em;
-    font-size: 20px;
-}
-
-
 /* FORUM */
 
 .forumwrap {

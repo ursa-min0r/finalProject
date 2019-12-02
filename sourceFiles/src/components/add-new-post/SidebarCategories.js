@@ -30,6 +30,9 @@ const SidebarCategories = ({ title }) => (
           <FormCheckbox className="mb-1" value="">
             Meetups and Events
           </FormCheckbox>
+          <FormCheckbox className="mb-1" value="">
+            Questions
+          </FormCheckbox>
         </ListGroupItem>
 
         <ListGroupItem className="d-flex px-3">

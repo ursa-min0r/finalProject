@@ -1,81 +1,20 @@
-import React from 'react';
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  CardBody,
-  CardFooter,
-  Button
-} from "shards-react";
-import addComment from './addComment';
+import React from "react";
+import ReactQuill from "react-quill";
+import { Card, CardBody, Form, FormInput } from "shards-react";
+import Meetups from "./Meetups";
 
-class ThreadPostComp extends React.Component {
-  constructor(props) {
-    super(props);
+const Editor = () => (
+  <Card small className="mb-3">
+    <CardBody>
+      <Form className="add-new-post">
+        <FormInput size="lg" className="mb-3" placeholder="Your Post Title" />
+        <ReactQuill className="add-new-post__editor mb-1" />
+      </Form>
+ <div>
+ 
+ </div>
+    </CardBody>
+  </Card>
+);
 
-    this.state = {
-      ThreadPostComp: []
-    };
-  }
-
-  componentDidMount() {
-      this.setState({
-          ThreadPostComp: [
-          {
-             author: "John Cena",
-             authorAvatar: require("../images/profilePhoto.jpeg"),
-             title: "Having issues linking my css.",
-             body: "Been trying to link my css file forever now and can't seem to get it to work... Any ideas?",
-             date: "14 November 2019"
-          },
-          ]
-      });
-  }
-
-  render() {
-    return (
-      <Container fluid className="main-content-container px-4">
-        {/* Third Row of Posts */}
-        <Row>
-          {this.state.PostsListThree.map((post, idx) => (
-            <Col lg="4" key={idx}>
-              <Card small className="card-post mb-4">
-                <CardBody>
-                  <h5 className="card-title">{post.title}</h5>
-                  <p className="card-text text-muted">{post.body}</p>
-                </CardBody>
-                <CardFooter className="border-top d-flex">
-                  <div className="card-post__author d-flex">
-                    <a
-                      href="https://www.google.com/"
-                      className="card-post__author-avatar card-post__author-avatar--small"
-                      style={{ backgroundImage: `url('${post.authorAvatar}')` }}
-                    >
-                    </a>
-                    <div className="d-flex flex-column justify-content-center ml-3">
-                      <span className="card-post__author-name">
-                        {post.author}
-                      </span>
-                      <small className="text-muted">{post.date}</small>
-                    </div>
-                  </div>
-                  <div className="my-auto ml-auto">
-                    <Button size="sm" theme="dark">
-                      <i className="far fa-bookmark mr-1" /> Save
-                    </Button>
-                  </div>
-                  <div>
-                    {addComment}
-                  </div>
-                </CardFooter>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    )
-  }
-}
-
-export default ThreadPostComp;
+export default Editor;
