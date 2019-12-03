@@ -12,16 +12,16 @@ class Meetups extends React.Component {
     this.state = {
       PostsListThree: [
         {
-          author: "John James",
-          authorAvatar: "",
+          author: "Dwight Schrute",
+          authorAvatar: require("../images/profilephotosmall6.png"),
           title: "Database discussion at Starbucks",
           body:
-            "Discussion the pros and cons of different database structures. Come join in a fast pace discussion to determine the best databases for jobs.",
+            "Discuss the pros and cons of different database structures. Come join in a fast pace discussion to determine the best databases for jobs.",
           date: "5 December 2019"
         },
         {
-          author: "Jenna Talis",
-          authorAvatar: "",
+          author: "Brandi Maxxxx",
+          authorAvatar: require("../images/profilephotosmall5.png"),
           title: "Women developers meetup at Barnes and Noble",
           body:
             "Are you a lady? Do you code? Are you searching for a similar bunch of ladies to discuss code with? Come meet a group of fantastic women at Barnes and Noble.",
@@ -29,7 +29,7 @@ class Meetups extends React.Component {
         },
         {
           author: "Smitty WerbenJagerManJensen",
-          authorAvatar: "",
+          authorAvatar: require("../images/profilephotosmall4.png"),
           title:
             "Pizza Hut Hack-A-Thon!",
           body:
@@ -43,7 +43,6 @@ class Meetups extends React.Component {
   render() {
     return (
 
-
       <Container fluid className="meet-up-container px-4 pb-4">
 
         <Card small className="mb-3">
@@ -52,19 +51,19 @@ class Meetups extends React.Component {
             <Row>
               {this.state.PostsListThree.map((post, idx) => (
                 <Col lg="4" key={idx}>
-                  <Card small className="card-post mb-4">
-                    <CardBody>
-              <h5 className="card-title">{post.title}</h5>
-                      <p className="card-text text-muted">{post.body}</p>
-                    </CardBody>
+                <Card small className="card-post mb-4">
+                  <CardBody>
+                    <h5 className="card-title">{post.title}</h5>
+
+
+                    <p className="card-text text-muted">{post.body}</p>
+                    <large className="text-normal">{post.topic}</large>
+                  </CardBody>
                     <CardFooter className="border-top d-flex">
                       <div className="card-post__author d-flex">
-                        <a
-                          href="https://www.google.com/"
-                          className="card-post__author-avatar card-post__author-avatar--small"
-                          style={{ backgroundImage: `url('${post.authorAvatar}')` }}
-                        >
-                        </a>
+                      <div className="card-post__author-avatar-author-avatar--large" >
+                         <img src={post.authorAvatar} alt="{ }" width="50px" height="50px" />
+                        </div>
                         <div className="d-flex flex-column justify-content-center ml-3">
                           <span className="card-post__author-name">
                             {post.author}
