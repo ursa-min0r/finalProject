@@ -13,20 +13,20 @@ export default function() {
       to: "/meetups",
     },
     {
-      title: "new Post",
-      htmlBefore: '<i class="material-icons">edit</i>',
+      title: "community",
+      htmlBefore: '<i class="material-icons">record_voice_over</i>',
       to: "/add-new-post",
     },
-    {
-      title: "profile",
-      htmlBefore: '<i class="material-icons">person</i>',
-      to: "/user-profile-lite",
-    },
+   
     {
       title: "tutorials",
       htmlBefore: '<i class="material-icons">school</i>',
       to: "/tutorials",
-    }
-  
+    },
+   {
+      title: "profile",
+      htmlBefore: '<i class="material-icons">person</i>',
+      to: "/user-profile-lite",
+    },
   ];
 }
