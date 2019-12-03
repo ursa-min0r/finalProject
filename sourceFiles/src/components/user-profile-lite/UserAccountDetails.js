@@ -147,11 +147,6 @@ const UserAccountDetails = ({ title }) => (
                     <option>West Virginia</option>
                     <option>Wisconsin</option>
                     <option>Wyoming</option>
-
-
-
-
-
                   </FormSelect>
                 </Col>
                 {/* Zip Code */}
