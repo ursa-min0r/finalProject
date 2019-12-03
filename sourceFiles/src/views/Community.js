@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "shards-react";
-
 import PageTitle from "../components/common/PageTitle";
 
 const AddNewPost = () => (

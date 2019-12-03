@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import {
   Card,
   CardHeader,
-  Button,
   ListGroup,
   ListGroupItem,
 } from "shards-react";
@@ -22,9 +21,7 @@ const UserDetails = ({ userDetails }) => (
       </div>
       <h4 className="mb-0 text-dark">{userDetails.name}</h4>
       <span className="text-muted d-block mb-2">{userDetails.jobTitle}</span>
-      <Button pill variant="secondary" size="sm" className="mb-1 btn btn-dark">
-        <i className="material-icons mr-1">person_add</i> Merge
-      </Button>
+      
     </CardHeader>
     <ListGroup flush>
       <ListGroupItem className="p-4">
