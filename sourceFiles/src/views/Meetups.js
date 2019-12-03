@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Card, CardBody, Row, Col, CardFooter, Button, } from "shards-react";
-import Editor from "../components/add-new-post/Editor";
+
 
 
 

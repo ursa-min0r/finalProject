@@ -20,7 +20,7 @@ export default class Notifications extends React.Component {
 
   render() {
     return (
-      <NavItem className="border-right dropdown notifications">
+      <NavItem className="border-left dropdown notifications">
         <NavLink
           className="nav-link-icon text-center"
           onClick={this.toggleNotifications}
@@ -43,7 +43,7 @@ export default class Notifications extends React.Component {
               </div>
             </div>
             <div className="notification__content">
-              <span className="notification__category">Blog</span>
+              <span className="notification__category">Community</span>
               <p>
                 You have a new comment on your post!
               </p>
