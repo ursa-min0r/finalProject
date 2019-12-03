@@ -5,21 +5,23 @@ import { Container, Navbar } from "shards-react";
 import NavbarSearch from "./NavbarSearch";
 import NavbarNav from "./NavbarNav/NavbarNav";
 import NavbarToggle from "./NavbarToggle";
+import "../MainNavbar/NavbarNav/navBar.css";
 
 const MainNavbar = ({ layout, stickyTop }) => {
   const classes = classNames(
     "main-navbar",
-    "bg-orange",
-    stickyTop && "sticky-top"
+    "bg-light",
+  /*stickyTop && "sticky-top"*/
   );
 
   return (
     <div className={classes}>
-      <Container className="p-0">
-        <Navbar type="dark" className="align-items-stretch flex-md-nowrap p-0">
-          <NavbarSearch />
-          <NavbarNav />
-          <NavbarToggle />
+      <Container className="p-2">
+        <Navbar type="default" className="align-items-stretch flex-md-nowrap p-0">
+           
+           <NavbarSearch /> 
+           <NavbarNav />
+           <NavbarToggle />
         </Navbar>
       </Container>
     </div>
@@ -38,7 +40,7 @@ MainNavbar.propTypes = {
 };
 
 MainNavbar.defaultProps = {
-  stickyTop: true
+  stickyTop: false
 };
 
 export default MainNavbar;
