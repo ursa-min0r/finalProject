@@ -10,7 +10,33 @@ class Meetups extends React.Component {
 
 
     this.state = {
-      PostsListThree: []
+      PostsListThree: [
+        {
+          author: "John James",
+          authorAvatar: "",
+          title: "Database discussion at Starbucks",
+          body:
+            "Discussion the pros and cons of different database structures. Come join in a fast pace discussion to determine the best databases for jobs.",
+          date: "5 December 2019"
+        },
+        {
+          author: "Jenna Talis",
+          authorAvatar: "",
+          title: "Women developers meetup at Barnes and Noble",
+          body:
+            "Are you a lady? Do you code? Are you searching for a similar bunch of ladies to discuss code with? Come meet a group of fantastic women at Barnes and Noble.",
+          date: "5 December 2019"
+        },
+        {
+          author: "Smitty WerbenJagerManJensen",
+          authorAvatar: "",
+          title:
+            "Pizza Hut Hack-A-Thon!",
+          body:
+            "Have a slice of pie and hack your way to a number of prizes. Will be hosting several competitions to showcase contestants skills.",
+          date: "5 December 2019"
+        }
+      ]
     };
   };
 
@@ -28,7 +54,7 @@ class Meetups extends React.Component {
                 <Col lg="4" key={idx}>
                   <Card small className="card-post mb-4">
                     <CardBody>
-                      <h5 className="card-title">{post.title}</h5>
+              <h5 className="card-title">{post.title}</h5>
                       <p className="card-text text-muted">{post.body}</p>
                     </CardBody>
                     <CardFooter className="border-top d-flex">
@@ -51,9 +77,7 @@ class Meetups extends React.Component {
                           <i className="far fa-bookmark mr-1" /> Save
                     </Button>
                       </div>
-                      <div>
-                        <Editor />
-                      </div>
+                      
                     </CardFooter>
                   </Card>
                 </Col>
