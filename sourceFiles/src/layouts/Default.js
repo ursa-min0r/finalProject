@@ -6,10 +6,10 @@ import MainNavbar from "../components/layout/MainNavbar/MainNavbar";
 import MainSidebar from "../components/layout/MainSidebar/MainSidebar";
 import MainFooter from "../components/layout/MainFooter";
 
-const DefaultLayout = ({ children, noNavbar, noFooter }) => (
+const DefaultLayout = ({ children, noNavbar, location, noFooter }) => (
   <Container fluid>
     <Row>
-      <MainSidebar />
+      {location.pathname !== "/login" ? <MainSidebar /> : null}
       <Col
         className="main-content p-0"
         lg={{ size: 10, offset: 2 }}
@@ -22,8 +22,13 @@ const DefaultLayout = ({ children, noNavbar, noFooter }) => (
         {!noFooter && <MainFooter />}
       </Col>
     </Row>
+      {console.log (location)}
+
   </Container>
+
 );
+
+
 
 DefaultLayout.propTypes = {
   /**

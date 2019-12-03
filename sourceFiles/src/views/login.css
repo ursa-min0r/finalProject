@@ -1,9 +1,8 @@
 
 
 .bg-image {
-  background-image: url('https://cdn.stocksnap.io/img-thumbs/960w/1STVFMTBJY.jpg');
+  background-image: url("../images/loginimagefix.PNG");
   background-size: cover;
-  background-position: center center;
 }
 
 .logo {

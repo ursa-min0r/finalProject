@@ -32,8 +32,9 @@ class Login extends React.Component {
                                 
 
                                 
-
-                                <button type="submit" className="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">SIGN IN</button>
+                                <Link to="/Dashboard">
+                                <button className="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">SIGN IN</button>
+                                </Link>
                                 <br></br>
                                 <div className="loginsubtxt">Don't have an account? Sign up below.</div>
                                 <br></br>
