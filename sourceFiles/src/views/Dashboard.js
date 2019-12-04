@@ -14,7 +14,7 @@ class Dashboard extends React.Component {
 
           <center>
             <img
-            src={require("../../src/images/loginimagefix.PNG")} alt="Header" width="1003px" height="871px" align="center" 
+            src={require("../../src/images/scriptHub.gif")} alt="Header" width="1003px" height="871px" align="center" 
             />
           </center>
 

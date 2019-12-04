@@ -1,3 +1,8 @@
+.img {
+    width: 1em;
+    height: 1em
+}
+
 .dashcontain {
     align-items: center;
     height: 100%;
