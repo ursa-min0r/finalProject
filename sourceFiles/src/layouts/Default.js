@@ -10,6 +10,7 @@ const DefaultLayout = ({ children, noNavbar, location, noFooter }) => (
   <Container fluid>
     <Row>
       {location.pathname !== "/login" ? <MainSidebar /> : null}
+      
       <Col
         className="main-content p-0"
         lg={{ size: 10, offset: 2 }}
@@ -42,7 +43,7 @@ DefaultLayout.propTypes = {
 };
 
 DefaultLayout.defaultProps = {
-  noNavbar: false,
+  noNavbar: true,
   noFooter: false
 };
 
