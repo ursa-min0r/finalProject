@@ -36,11 +36,11 @@ export default class UserActions extends React.Component {
 
 
         <DropdownToggle caret tag={NavLink} className="text-nowrap px-5">
-          <img className="rounded-circle" src={require("../../../../images/profilePhoto.jpeg")} alt="ProfilePhoto" width="50px" height="50px" align="center"  />
-          <span className="d-none d-md-inline-block text-dark"> Welcome, {UserDetails.defaultProps.userDetails.name} !</span>
+          <img className="rounded-circle" src={require("../../../../images/profilePhoto.jpeg")} alt="ProfilePhoto" width="75px" height="75px" align="center"  />
+          <span className="d-none d-md-inline-block text-dark text-large"> Welcome, {UserDetails.defaultProps.userDetails.name} !</span>
         </DropdownToggle>
-        <Collapse tag={DropdownMenu} right small open={this.state.visible}>
-          <DropdownItem tag={Link} to="user-profile-lite">
+        <Collapse tag={DropdownMenu} right large open={this.state.visible}>
+          <DropdownItem tag={Link} to="user-profile-lite ">
             <i className="material-icons">edit</i> Edit Profile
           </DropdownItem>
           <DropdownItem divider />

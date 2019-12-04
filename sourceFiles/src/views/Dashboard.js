@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardBody, } from "shards-react";
-
+import UserActions from "../components/layout/MainNavbar/NavbarNav/UserActions"
 import "../views/dashcomponents/dash.css"
 
 
@@ -12,15 +12,19 @@ class Dashboard extends React.Component {
         <CardBody className="dashwrapper">
 
 
-          <center>
+         
+<Card className="center bg-light">
+
+< UserActions />
+</Card>
+<Card>
+<center>
             <img
-            src={require("../../src/images/loginimagefix.PNG")} alt="Header" width="1003px" height="871px" align="center" 
+            src={require("../../src/images/scriptHub.gif")} alt="Header" width="650px" height="650px" align="center" 
             />
           </center>
 
-
-
-
+</Card> 
 
         </CardBody>
       </Card>
