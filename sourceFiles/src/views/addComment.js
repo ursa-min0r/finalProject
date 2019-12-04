@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom';
 
 
 
-class AddComment extends React.Component {
+class addComment extends React.Component {
   constructor(props, context) {
     super(props, context);
 
@@ -54,4 +54,4 @@ class AddComment extends React.Component {
 }
 
 
-export default AddComment;
+export default addComment;

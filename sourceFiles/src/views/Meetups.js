@@ -1,6 +1,12 @@
 import React from "react";
 import { Container, Card, CardBody, Row, Col, CardFooter, Button, } from "shards-react";
+import Editor from "../components/add-new-post/Editor";
+import SidebarActions from "../components/add-new-post/SidebarActions";
+import SidebarCategories from "../components/add-new-post/SidebarCategories";
 
+
+
+  
 
 
 
@@ -42,8 +48,10 @@ class Meetups extends React.Component {
 
   render() {
     return (
-
       <Container fluid className="meet-up-container px-4 pb-4">
+        <Row noGutters className="page-header py-4">
+          
+        </Row>
 
         <Card small className="mb-3">
           <CardBody>
@@ -51,33 +59,38 @@ class Meetups extends React.Component {
             <Row>
               {this.state.PostsListThree.map((post, idx) => (
                 <Col lg="4" key={idx}>
-                <Card small className="card-post mb-4">
-                  <CardBody>
-                    <h5 className="card-title">{post.title}</h5>
+                  <Card small className="card-post mb-4">
+                    <CardBody>
+                      <h5 className="card-title">{post.title}</h5>
 
 
-                    <p className="card-text text-muted">{post.body}</p>
-                    <large className="text-normal">{post.topic}</large>
-                  </CardBody>
+                      <p className="card-text text-muted">{post.body}</p>
+                      <large className="text-normal">{post.topic}</large>
+                    </CardBody>
                     <CardFooter className="border-top d-flex">
                       <div className="card-post__author d-flex">
-                      <div className="card-post__author-avatar-author-avatar--large" >
-                         <img src={post.authorAvatar} alt="{ }" width="50px" height="50px" />
+                        <div className="card-post__author-avatar-author-avatar--large" >
+                          <img src={post.authorAvatar} alt="{ }" width="50px" height="50px" />
                         </div>
                         <div className="d-flex flex-column justify-content-center ml-3">
-                          <span className="card-post__author-name">
+                          <span className="card-post__author-name small">
                             {post.author}
                           </span>
                           <small className="text-muted">{post.date}</small>
                         </div>
                       </div>
-                      <div className="my-auto ml-auto">
-                        <Button size="sm" theme="dark">
-                          <i className="far fa-bookmark mr-1" /> Save
-                    </Button>
-                      </div>
-                      
                     </CardFooter>
+                    <CardFooter>
+
+                      <Button size="sm-btn btn-block" theme="dark">
+                        <i class="material-icons">favorite</i> Like </Button>
+                      <br></br>
+                      <Button size="sm-btn btn-block" theme="dark">
+                        <i class="material-icons">add_comment</i> Comment </Button>
+
+                    </CardFooter>
+
+
                   </Card>
                 </Col>
               ))}
@@ -85,13 +98,28 @@ class Meetups extends React.Component {
 
           </CardBody>
         </Card>
+        <Row>
+      {/* Editor */}
+      <Col lg="9" md="12">
+        <Editor />
+       
+      </Col>
 
+      {/* Sidebar Widgets */}
+      <Col lg="3" md="12">
+        <SidebarActions />
+        <SidebarCategories />
+      </Col>
+    </Row>
 
       </Container>
+
+      
 
     )
   }
 }
+
 
 
 

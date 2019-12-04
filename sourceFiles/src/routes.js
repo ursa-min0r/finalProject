@@ -7,7 +7,7 @@ import { DefaultLayout } from "./layouts";
 // Route Views
 import Dashboard from "./views/Dashboard";
 import UserProfileLite from "./views/UserProfileLite";
-import AddNewPost from "./views/AddNewPost";
+import Community from "./views/Community";
 import Tutorials from "./views/Tutorials";
 
 import Meetups from "./views/Meetups";
@@ -34,7 +34,7 @@ export default [
   {
     path: "/add-new-post",
     layout: DefaultLayout,
-    component: AddNewPost
+    component: Community
   },
   {
     path: "/tutorials",

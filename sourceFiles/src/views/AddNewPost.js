@@ -4,7 +4,8 @@ import PageTitle from "../components/common/PageTitle";
 import Editor from "../components/add-new-post/Editor";
 import SidebarActions from "../components/add-new-post/SidebarActions";
 import SidebarCategories from "../components/add-new-post/SidebarCategories";
-import Community from "./Community";
+
+
 
 
 
@@ -15,7 +16,8 @@ const AddNewPost = () => (
     <Row noGutters className="page-header py-4">
       <PageTitle sm="4" className="text-sm-left" />
     </Row>
-<Community />
+
+
     <Row>
       {/* Editor */}
       <Col lg="9" md="12">
