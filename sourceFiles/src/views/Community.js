@@ -1,5 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Card, CardBody, CardFooter, Button } from "shards-react";
+import Editor from "../components/add-new-post/Editor";
+import SidebarActions from "../components/add-new-post/SidebarActions";
+import SidebarCategories from "../components/add-new-post/SidebarCategories";
+
 
 
 
@@ -17,7 +21,7 @@ class Community extends React.Component {
           topic: "#Question",
           body:
             "I was sleeping and my computer turned on by itself and started typing weird things, is this normal? Thanks.",
-          date: "31 March 1999"
+          date: "5 December 2019"
         },
         {
           title: "Can't see my profile",
@@ -47,6 +51,9 @@ class Community extends React.Component {
 
 
       <Container fluid className="meet-up-container px-4 pb-4">
+         <Row noGutters className="page-header py-4">
+          
+          </Row>
 
         <Card small className="mb-3">
           <CardBody>
@@ -64,22 +71,30 @@ class Community extends React.Component {
                     </CardBody>
                     <CardFooter className="border-top d-flex">
                       <div className="card-post__author d-flex">
-                        <div className="card-post__author-avatar--large" >
-                         <img src={post.authorAvatar} alt="{ }" />
+                        <div className="card-post__author-avatar--small" >
+                          <img src={post.authorAvatar} alt="{ }" />
                         </div>
                         <div className="d-flex flex-column justify-content-center ml-3">
-                          <span className="card-post__author-name">
+                          <span className="card-post__author-name small">
                             {post.author}
                           </span>
                           <small className="text-muted">{post.date}</small>
                         </div>
+
                       </div>
                       <div className="my-auto ml-auto">
-                        <Button size="sm" theme="dark">
-                          <i className="far fa-bookmark mr-1" /> Save
-                    </Button>
-                      </div>
 
+                      </div>
+                    </CardFooter>
+
+                    <CardFooter>
+                      <div>
+                        <Button size="sm-btn btn-block" theme="dark">
+                          <i class="material-icons">favorite</i> Like </Button>
+                        <br></br>
+                        <Button size="sm-btn btn-block" theme="dark">
+                          <i class="material-icons">add_comment</i> Comment </Button>
+                      </div>
                     </CardFooter>
                   </Card>
                 </Col>
@@ -88,7 +103,19 @@ class Community extends React.Component {
 
           </CardBody>
         </Card>
+        <Row>
+      {/* Editor */}
+      <Col lg="9" md="12">
+        <Editor />
+       
+      </Col>
 
+      {/* Sidebar Widgets */}
+      <Col lg="3" md="12">
+        <SidebarActions />
+        <SidebarCategories />
+      </Col>
+    </Row>
       </Container>
 
     )
