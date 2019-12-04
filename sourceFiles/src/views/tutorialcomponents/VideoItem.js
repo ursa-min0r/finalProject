@@ -1,14 +1,23 @@
 import React from 'react';
 import './video.css';
 
-const VideoItem = ({video , handleVideoSelect}) => {
+const VideoItem = ({video}) => {
+    if (!video) {
+        return <div><img alt=""></img></div>;
+    }
+
+    const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
+    console.log(typeof(video));
     return (
-        <div onClick={ () => handleVideoSelect(video)} className=' video-item item'>
-            <img className='ui image' src={video.snippet.thumbnails.medium.url} alt={video.snippet.description}/>
-            <div className='content'>
-                <div className='header '>{video.snippet.title}</div>
+        <div>
+            <div className='ui embed'>
+                <iframe src={videoSrc} allowFullScreen title='Video player'/>
+            </div>
+            <div className='ui segment'>
+                <h4 className='ui header'>{video.snippet.title}</h4>
             </div>
         </div>
+
     )
-};
+}
 export default VideoItem;
