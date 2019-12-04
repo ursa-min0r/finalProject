@@ -1,4 +1,4 @@
-require("dotenv").config();
+/*require("dotenv").config();
 var express = require("express");
 
 
@@ -29,4 +29,4 @@ db.sequelize.sync(syncOptions).then(function() {
   });
 });
 
-module.exports = app;
+module.exports = app;*/

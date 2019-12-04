@@ -1,16 +1,9 @@
-
-
 .bg-image {
-  background-image: url("../images/loginimagefix.PNG");
+  background-image: url("../images/loginimagefix(2).png");
   background-size: cover;
+  
 }
 
-.logo {
-  background-image: url("https://en.wikipedia.org/wiki/Texas#/media/File:Flag_of_Texas.svg");
-align-items: center;
-
-
-}
 
 .btn-primary {
   background: #ff914d !important;

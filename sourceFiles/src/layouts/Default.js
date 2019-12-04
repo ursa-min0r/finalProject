@@ -1,15 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col } from "shards-react";
-
 import MainNavbar from "../components/layout/MainNavbar/MainNavbar";
 import MainSidebar from "../components/layout/MainSidebar/MainSidebar";
 import MainFooter from "../components/layout/MainFooter";
-
 const DefaultLayout = ({ children, noNavbar, location, noFooter }) => (
   <Container fluid>
     <Row>
       {location.pathname !== "/login" ? <MainSidebar /> : null}
+      
       <Col
         className="main-content p-0"
         lg={{ size: 10, offset: 2 }}
@@ -23,13 +22,8 @@ const DefaultLayout = ({ children, noNavbar, location, noFooter }) => (
       </Col>
     </Row>
       {console.log (location)}
-
   </Container>
-
 );
-
-
-
 DefaultLayout.propTypes = {
   /**
    * Whether to display the navbar, or not.
@@ -40,10 +34,9 @@ DefaultLayout.propTypes = {
    */
   noFooter: PropTypes.bool
 };
-
 DefaultLayout.defaultProps = {
-  noNavbar: false,
-  noFooter: false
+  noNavbar: true,
+  noFooter: true,
 };
-
 export default DefaultLayout;
+
